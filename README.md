@@ -1,4 +1,3 @@
-# VIKRAM-S
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=VIKRAM%20S&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Biotechnology%20%7C%20Bioinformatics%20%7C%20Computational%20Biology&descAlignY=62&descSize=16)
@@ -6,36 +5,21 @@
 [![Email](https://img.shields.io/badge/Email-s.vikram1014%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:s.vikram1014@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vikram1014-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vikram1014)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Biotechnology+Undergraduate+%40+TNAU;Bulk+RNA-Seq+%7C+DESeq2+%7C+KEGG+Pathway+Analysis;Molecular+Docking+%26+MD+Simulations+Enthusiast;Turning+Transcriptomes+into+Therapeutic+Insights)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Biotechnology+Undergraduate+%40+TNAU;Bulk+RNA-Seq+%7C+DESeq2+%7C+KEGG+Pathway+Analysis;Molecular+Docking+%26+MD+Simulations+Enthusiast;Transcriptomes+into+Therapeutic+Insights)](https://git.io/typing-svg)
 
 </div>
 
 ## 👨‍🔬 About Me
 
-```r
-vikram <- list(
-  name              = "Vikram S",
-  location          = "Coimbatore, Tamil Nadu, India",
-  degree            = "B.Tech Biotechnology @ TNAU (2022 - 2026), CGPA 8.00/10",
-  stack             = c("R", "Python", "Perl", "Shell", "C"),
-  focus             = c(
-    "Bulk RNA-Seq Analysis (DESeq2)",
-    "Molecular Docking & MD Simulation",
-    "ADMET & Toxicology Prediction",
-    "KEGG / GO Pathway Enrichment"
-  ),
-  currentlyLearning = c(
-    "SPARQL & Apache Jena Fuseki",
-    "Genomic Knowledge Graphs",
-    "PHP for Bioinformatics Web Tools"
-  ),
-  funFact           = "Docked phytochemicals against dengue virus proteins before filing a real GitHub issue",
-  motto             = function() "Reproducible research, one differential expression plot at a time."
-)
+I'm a Biotechnology undergraduate at **Tamil Nadu Agricultural University (TNAU)**, passionate about bridging molecular biology with computational analysis. My work centers on bulk RNA-seq analysis, molecular docking, and MD simulations — using these tools to uncover biological insight and support drug discovery.
 
-print(vikram$motto())
-#> [1] "Reproducible research, one differential expression plot at a time."
-```
+I'm proficient in **R, Python, Perl, Shell, and C**, and I enjoy building reproducible, data-driven pipelines for transcriptomic and pathway-level analysis.
+
+- 🔬 **Currently focused on:** Bulk RNA-Seq Analysis (DESeq2), Molecular Docking & MD Simulation, ADMET & Toxicology Prediction, KEGG/GO Pathway Enrichment
+- 📚 **Currently learning:** SPARQL & Apache Jena Fuseki, Genomic Knowledge Graphs, PHP for Bioinformatics Web Tools
+- 📍 **Location:** Coimbatore, Tamil Nadu, India
+- 🎓 **Education:** B.Tech Biotechnology at TNAU (2022 – 2026) | CGPA: 8.00/10
+- 💡 **Motto:** *"Reproducible research, one differential expression plot at a time."*
 
 ## 🛠️ Tech Stack
 
@@ -121,15 +105,24 @@ print(vikram$motto())
 
 <div align="center">
 
-| Achievement | Year |
-|:---|:---:|
-| Organizer, "National Science Day'25" national-level conference (TNAU) | 2025 |
-| 3rd Statistical Genomics Workshop, NCBS | 2025 |
-| Coursera — Data Analysis with R Programming (Google) | 2025 |
-| NPTEL — Biomedical Nanotechnology (73%) | 2024 |
-| Coursera — Introduction to the Biology of Cancer | — |
-| "SCOPE" District-Level Competition — Winner | 2021 |
-| Tennikoit State-Level — Participant | 2020 |
+| Year | Achievement |
+|:---:|:---|
+| 2026 | Coursera — Introduction to the Biology of Cancer |
+| 2025 | Organizer, "National Science Day'25" national-level conference — TNAU |
+| 2025 | 3rd Statistical Genomics Workshop — NCBS |
+| 2025 | Coursera — Data Analysis with R Programming (Google) |
+| 2025 | Agri-Tech Startup Business Meet (5 days) — TNAU |
+| 2025 | National Webinar on Grapes Processing & Value Addition — NIFTEM, Thanjavur |
+| 2025 | 4-Day Hands-on Training: Data Analysis & Visualization with R — TNAU |
+| 2025 | AI Tools & ChatGPT Workshop — Be10x |
+| 2024 | NPTEL — Biomedical Nanotechnology (73%) |
+| 2024 | Participated in Government Digital Crop Survey, Thirupur District |
+| 2024 | "Bioconcorrenza'24" National-Level Symposium — TNAU |
+| 2023 | "Bioconcorrenza'23" National-Level Symposium — TNAU |
+| 2022 | Hands-on Training: Robotics — APCE |
+| 2021 | "SCOPE" District-Level Competition — Winner |
+| 2020 | Tennikoit State-Level — Participant |
+| 2019 | Budding Animation Course — Apollo Computer Education Ltd. |
 
 </div>
 
