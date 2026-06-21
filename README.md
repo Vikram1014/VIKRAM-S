@@ -5,7 +5,7 @@
 [![Email](https://img.shields.io/badge/Email-s.vikram1014%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:s.vikram1014@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vikram1014-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vikram1014)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Biotechnology+Undergraduate+%40+TNAU;Bulk+RNA-Seq+%7C+DESeq2+%7C+KEGG+Pathway+Analysis;Molecular+Docking+%26+MD+Simulations+Enthusiast;Transcriptomes+into+Therapeutic+Insights)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=70A5FD&center=true&vCenter=true&width=750&lines=Biotechnology+Undergraduate+%40+TNAU;Bulk+RNA-Seq+%7C+DESeq2+%7C+KEGG+Pathway+Analysis;Molecular+Docking+%26+MD+Simulations+Enthusiast;Turning+Transcriptomes+into+Therapeutic+Insights)](https://git.io/typing-svg)
 
 </div>
 
@@ -18,7 +18,7 @@ I'm proficient in **R, Python, Perl, Shell, and C**, and I enjoy building reprod
 - 🔬 **Currently focused on:** Bulk RNA-Seq Analysis (DESeq2), Molecular Docking & MD Simulation, ADMET & Toxicology Prediction, KEGG/GO Pathway Enrichment
 - 📚 **Currently learning:** SPARQL & Apache Jena Fuseki, Genomic Knowledge Graphs, PHP for Bioinformatics Web Tools
 - 📍 **Location:** Coimbatore, Tamil Nadu, India
-- 🎓 **Education:** B.Tech Biotechnology at TNAU (2022 – 2026) | CGPA: 8.00/10
+- 🎓 **Education:** B.Tech Biotechnology @ TNAU (2022 – 2026) | CGPA: 8.00/10
 - 💡 **Motto:** *"Reproducible research, one differential expression plot at a time."*
 
 ## 🛠️ Tech Stack
@@ -133,6 +133,15 @@ Agricultural College and Research Institute, Coimbatore
 2022 – 2026 | CGPA: 8.00 / 10
 
 **📚 Currently Learning:** SPARQL & Apache Jena Fuseki · Genomic Knowledge Graphs · PHP for Bioinformatics Web Tools
+
+<div align="center">
+
+> *Do "the bioinformatics" for someone, and you help them for a day.*
+> *Teach someone to do bioinformatics, and you help them for a lifetime.*
+>
+> **— Ancient Chinese proverb**
+
+</div>
 
 <div align="center">
 
