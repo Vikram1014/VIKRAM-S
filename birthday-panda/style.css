@@ -2,27 +2,28 @@
    VARIABLES & GLOBAL STYLES
    ========================================= */
 :root {
-    --color-bg-dark: #0f172a;
-    --color-bg-light: #fef6f5; /* Soft pink/cream */
-    --color-text-dark: #1e293b;
-    --color-text-light: #f8fafc;
+    --color-bg-dark: #1a2a1a; /* Deep forest night */
+    --color-bg-light: #f0f4e8; /* Pale bamboo cream */
+    --color-text-dark: #2c3e2c; /* Deep moss green */
+    --color-text-light: #e8ece1; /* Soft mossy white */
 
-    --color-primary: #ffb7b2; /* Soft pink */
-    --color-secondary: #e2f0cb; /* Light green (bamboo) */
-    --color-accent: #c7ceea; /* Lavender */
-    --color-yellow: #fdfd96; /* Warm yellow */
-    --color-panda-black: #2d3436;
-    --color-panda-white: #ffffff;
+    --color-primary: #4f8c42; /* Vibrant Bamboo Green */
+    --color-secondary: #8bc34a; /* Light Leaf Green */
+    --color-accent: #c8e6c9; /* Soft Mint / Pale Bamboo */
+    --color-yellow: #fff59d; /* Soft sunlight */
+    --color-panda-black: #1f251f; /* Charcoal black */
+    --color-panda-white: #fafafa;
+    --color-earth: #795548; /* Wood/earth brown */
 
     --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
-    --transition-speed: 0.5s;
-    --border-radius-lg: 24px;
-    --border-radius-md: 16px;
-    --border-radius-sm: 8px;
+    --transition-speed: 0.8s; /* Slightly slower for realism */
+    --border-radius-lg: 16px; /* Less perfectly round, slightly more organic structure */
+    --border-radius-md: 12px;
+    --border-radius-sm: 6px;
 
-    --shadow-soft: 0 10px 25px rgba(0,0,0,0.05);
-    --shadow-glow: 0 0 20px rgba(255, 183, 178, 0.4);
+    --shadow-soft: 0 10px 30px rgba(26, 42, 26, 0.15);
+    --shadow-glow: 0 0 25px rgba(139, 195, 74, 0.5); /* Greenish glow */
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -46,9 +47,10 @@
 body {
     font-family: var(--font-main);
     background-color: var(--color-bg-dark); /* Starts dark */
+    background-image: radial-gradient(circle at 50% 0%, rgba(139, 195, 74, 0.05), transparent 70%);
     color: var(--color-text-light);
     overflow: hidden; /* No scrolling, app-like */
-    transition: background-color 2s ease, color 2s ease;
+    transition: background-color 2.5s ease-in-out, color 2.5s ease-in-out;
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -58,6 +60,8 @@ body {
 
 body.theme-light {
     background-color: var(--color-bg-light);
+    background-image: radial-gradient(circle at top right, rgba(79, 140, 66, 0.1), transparent 60%),
+                      radial-gradient(circle at bottom left, rgba(139, 195, 74, 0.08), transparent 60%);
     color: var(--color-text-dark);
 }
 
@@ -143,20 +147,22 @@ h1, h2, h3 {
 
 /* Cards / Panels */
 .panel {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
+    background: rgba(26, 42, 26, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: var(--border-radius-lg);
     padding: 40px;
     max-width: 600px;
     width: 100%;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(139, 195, 74, 0.2);
     box-shadow: var(--shadow-soft);
 }
 
 body.theme-light .panel {
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(79, 140, 66, 0.3);
+    box-shadow: 0 15px 35px rgba(44, 62, 44, 0.08);
 }
 
 /* Persistent UI */
@@ -243,6 +249,24 @@ body.theme-light .panel {
 /* =========================================
    PANDA & EFFECTS (Placeholders)
    ========================================= */
+#ambient-bamboo-layer {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Lowest z-index so it sits behind panels */
+    overflow: hidden;
+}
+
+.bamboo-stalk {
+    position: absolute;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+    transform-origin: bottom center; /* Pivot from the ground */
+}
+
+body.theme-light .bamboo-stalk {
+    filter: drop-shadow(0 0 10px rgba(139, 195, 74, 0.4));
+}
+
 #global-panda-layer {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -256,38 +280,43 @@ body.theme-light .panel {
 }
 
 .shake {
-    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    /* Replaced jittery shake with a more natural startle/jolt */
+    animation: startle 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
-@keyframes shake {
-    10%, 90% { transform: translate3d(-1px, 0, 0); }
-    20%, 80% { transform: translate3d(2px, 0, 0); }
-    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-    40%, 60% { transform: translate3d(4px, 0, 0); }
+@keyframes startle {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.1) translateY(-10px); }
+    50% { transform: scale(0.95) translateY(2px); }
+    80% { transform: scale(1.02) translateY(-1px); }
+    100% { transform: scale(1) translateY(0); }
 }
 
 .slide-up {
-    animation: slideUp 1s ease forwards;
+    /* Smoother, physics-based slide */
+    animation: smoothSlideUp 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+@keyframes smoothSlideUp {
+    from { transform: translateY(80px); opacity: 0; filter: blur(5px); }
+    to { transform: translateY(0); opacity: 1; filter: blur(0); }
 }
 
 @keyframes slideRight {
-    from { transform: translateX(-100vw); }
-    to { transform: translateX(100vw); }
+    from { transform: translateX(-100vw) rotate(-5deg); }
+    to { transform: translateX(100vw) rotate(5deg); }
 }
 
 @keyframes slideLeft {
-    from { transform: translateX(100vw); }
-    to { transform: translateX(-100vw); }
+    from { transform: translateX(100vw) rotate(5deg); }
+    to { transform: translateX(-100vw) rotate(-5deg); }
 }
 
 @keyframes floatUp {
-    from { transform: translateY(100vh); }
-    to { transform: translateY(-50vh); }
+    0% { transform: translateY(100vh) translateX(0px); }
+    33% { transform: translateY(30vh) translateX(20px); }
+    66% { transform: translateY(-30vh) translateX(-15px); }
+    100% { transform: translateY(-100vh) translateX(10px); }
 }
 
 @keyframes spin {
@@ -295,10 +324,27 @@ body.theme-light .panel {
     to { transform: rotate(360deg); }
 }
 
+.sway {
+    animation: naturalSway 6s ease-in-out infinite alternate;
+}
+
+@keyframes naturalSway {
+    0% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+}
+
 @keyframes fall {
-    0% { transform: translateY(-100px) rotate(0deg); }
-    80% { transform: translateY(80vh) rotate(180deg); }
-    100% { transform: translateY(80vh) rotate(180deg) scale(1.2); opacity: 0.5; }
+    /* Gravity simulation with a bounce at the end */
+    0% { transform: translateY(-150px) rotate(0deg); opacity: 1; animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+    60% { transform: translateY(80vh) rotate(100deg); animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    75% { transform: translateY(65vh) rotate(140deg); animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+    90% { transform: translateY(80vh) rotate(170deg); animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    100% { transform: translateY(80vh) rotate(180deg) scale(1.1); opacity: 0; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    50% { transform: translateY(-20px); animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 }
 
 @media (max-width: 600px) {

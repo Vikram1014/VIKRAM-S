@@ -1201,18 +1201,19 @@ registerScene(
             p.style.left = Math.random() * 90 + '%';
             p.style.top = Math.random() * 80 + '%';
 
-            // Random animations
-            const anims = ['bounce', 'spin', 'shake', 'float'];
+            // Random realistic animations
+            const anims = ['bounce', 'sway', 'float'];
             const anim = anims[Math.floor(Math.random() * anims.length)];
 
+            // Give them random initial delays so they don't move in sync
+            const delay = Math.random() * 2;
+
             if (anim === 'bounce') {
-                p.style.animation = 'slideUp 1s infinite alternate ease-in-out';
-            } else if (anim === 'spin') {
-                p.style.animation = 'spin 4s infinite linear';
-            } else if (anim === 'shake') {
-                p.style.animation = 'shake 2s infinite';
+                p.style.animation = `bounce ${1 + Math.random()}s infinite alternate ease-in-out ${delay}s`;
+            } else if (anim === 'sway') {
+                p.style.animation = `naturalSway ${4 + Math.random() * 3}s infinite alternate ease-in-out ${delay}s`;
             } else {
-                p.style.animation = 'floatUp 6s infinite ease-in';
+                p.style.animation = `floatUp ${10 + Math.random() * 5}s infinite linear ${delay}s`;
             }
 
             allPandas.appendChild(p);
