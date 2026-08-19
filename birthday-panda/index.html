@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Panda Birthday Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Persistent UI Elements -->
+    <div id="audio-controls" class="hidden">
+        <button id="btn-toggle-music" aria-label="Toggle Music">🎵</button>
+    </div>
+
+    <div id="progress-container" class="hidden">
+        <div id="progress-text">🐼 Chapter 1</div>
+        <div class="progress-bar-bg">
+            <div id="progress-bar-fill"></div>
+        </div>
+    </div>
+
+    <button id="btn-restart-global" class="hidden" title="Restart Adventure">🔄</button>
+
+    <!-- Global Panda Layer (for random events) -->
+    <div id="global-panda-layer"></div>
+
+    <!-- Main Game Container -->
+    <main id="game-container">
+        <!-- Scenes will be injected/toggled here by JS -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
