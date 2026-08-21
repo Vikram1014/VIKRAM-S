@@ -20,10 +20,10 @@
             <Border BorderBrush="#555" BorderThickness="0,1,0,0" Margin="0,10,0,10"/>
 
             <TextBlock Text="SHARE INTERNET" Foreground="White" FontWeight="Bold" FontSize="14" Margin="0,10,0,10"/>
-            <Button Content="START SHARING" Background="#007ACC" Foreground="White" Padding="10" Margin="0,0,0,10"/>
+            <Button x:Name="StartSharingButton" Content="START SHARING" Background="#007ACC" Foreground="White" Padding="10" Margin="0,0,0,10" Click="StartSharingButton_Click"/>
 
             <TextBlock Text="Connection Code" Foreground="LightGray" Margin="0,10,0,5"/>
-            <TextBox Text="ABCD-72F9" Background="#333" Foreground="White" IsReadOnly="True" HorizontalAlignment="Left" Width="100"/>
+            <TextBox x:Name="ConnectionCodeTextBox" Text="" Background="#333" Foreground="White" IsReadOnly="True" HorizontalAlignment="Left" Width="100"/>
         </StackPanel>
 
         <TextBlock Grid.Row="2" Text="Connected devices: 0" Foreground="Gray"/>
