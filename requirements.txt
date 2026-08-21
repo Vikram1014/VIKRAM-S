@@ -1,0 +1,6 @@
+streamlit
+plotly
+pandas
+numpy
+stmol
+py3Dmol
