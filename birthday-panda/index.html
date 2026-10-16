@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Panda Birthday Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Persistent UI Elements -->
+    <div id="audio-controls" class="hidden">
+        <button id="btn-toggle-music" aria-label="Toggle Music">🎵</button>
+    </div>
+
+    <div id="progress-container" class="hidden">
+        <div id="progress-text">🐼 Chapter 1</div>
+        <div class="progress-bar-bg">
+            <div id="progress-bar-fill"></div>
+        </div>
+    </div>
+
+    <button id="btn-restart-global" class="hidden" title="Restart Adventure">🔄</button>
+
+    <!-- Ambient Bamboo Layer -->
+    <div id="ambient-bamboo-layer">
+        <div class="bamboo-stalk sway" style="left: 5%; bottom: -50px; font-size: 8rem; animation-delay: 0s;">🎋</div>
+        <div class="bamboo-stalk sway" style="left: 15%; bottom: -80px; font-size: 6rem; animation-delay: -2s; opacity: 0.6;">🎋</div>
+        <div class="bamboo-stalk sway" style="right: 5%; bottom: -30px; font-size: 10rem; animation-delay: -4s;">🎋</div>
+        <div class="bamboo-stalk sway" style="right: 20%; bottom: -60px; font-size: 5rem; animation-delay: -1s; opacity: 0.4;">🎋</div>
+    </div>
+
+    <!-- Global Panda Layer (for random events) -->
+    <div id="global-panda-layer"></div>
+
+    <!-- Main Game Container -->
+    <main id="game-container">
+        <!-- Scenes will be injected/toggled here by JS -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
