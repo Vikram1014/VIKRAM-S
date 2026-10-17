@@ -1,0 +1,6 @@
+renv/
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+original_scripts/

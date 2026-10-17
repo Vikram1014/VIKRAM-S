@@ -1,0 +1,5 @@
+.libPaths(c("/app/renv/library", .libPaths()))
+Sys.setenv(RENV_PATHS_LIBRARY="/app/renv/library")
+library(renv)
+options(shiny.port = 3000, shiny.host = "0.0.0.0")
+source("app.R")
